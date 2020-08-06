@@ -39,7 +39,7 @@ export default class ClassesController {
             .select(['classes.*', 'users.*']);
 
         return response.json(classes);
-    };
+    }
 
     async create(request: Request, response: Response) {
         const {
@@ -81,5 +81,5 @@ export default class ClassesController {
                 error: 'Unexpected error while creating new class'
             });
         }
-    };
+    }
 }
